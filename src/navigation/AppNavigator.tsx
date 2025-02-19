@@ -12,12 +12,22 @@ export type RootParamList = {
 const Stack = createStackNavigator<RootParamList>();
 
 const AppNavigator = () => {
-  <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="TaskList" component={TaskList} options={{ title: 'Tasks' }} />
-      <Stack.Screen name="TaskForm" component={TaskForm} options={{ title: 'Task Form' }} />
-    </Stack.Navigator>
-  </NavigationContainer>
-}
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="TaskList"
+          component={TaskList}
+          options={{title: 'Tasks'}}
+        />
+        <Stack.Screen
+          name="TaskForm"
+          component={TaskForm}
+          options={{title: 'Task Form'}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 export default AppNavigator;
