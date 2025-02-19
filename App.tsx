@@ -1,21 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {Provider} from 'react-redux';
+import store from './src/redux';
+import AppNavigator from './src/navigation/AppNavigator';
 
-function App() {
-  return (
-    <SafeAreaView>
-      <View>
-        <Text>App.tsx</Text>
-      </View>
-    </SafeAreaView>
-  );
-}
+const App = () => (
+  <Provider store={store}>
+    <AppNavigator />
+  </Provider>
+);
 
 export default App;
