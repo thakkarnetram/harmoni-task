@@ -27,7 +27,4 @@ A simple Task Management App built with React Native CLI that allows users to ad
 </p>
 
 ## Video
-<video width="640" height="360" controls>
-  <source ur src="./src/sample/sample.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+- **Sample Demo** ./src/sample/sample.mp4
